@@ -9,22 +9,17 @@ function clearDisplay() {
 };
 
 function insertNumber(number) {
-    display.textContent += number;
-    console.log('number inserted');
-    
+    display.textContent += number;    
 };
 
 function chooseOperation(operator) {
     firstNumber = display.textContent;
     clearDisplay();
-    console.log('first number inserted');
 
     if (!firstNumber) {
         return;
     }
-    chooseOperation = operator;
-    console.log('operator chosen');
-    
+    operationSymbol = operator;    
 };
 
 function checkVariables() {
@@ -34,10 +29,7 @@ function checkVariables() {
     if (!secondNumber) {
         return;
     }
-    console.log('second number inserted');
-    getResult();
-    console.log('result');
-    
+    getResult();    
 };
 
 const getSum = () => +firstNumber + +secondNumber;
@@ -50,23 +42,17 @@ function getResult() {
         case '+':
             result = getSum();
             break;
-
         case '-':
             result = getSubtraction();
             break;
-
         case '*':
             result = getMultiplication();
             break;
-
-        case '/':
+        case '÷':
             result = getDivision();
             break;
-
         default:
             return;
     }
     display.textContent = result;
-    console.log('switch case result');
-    
 };
