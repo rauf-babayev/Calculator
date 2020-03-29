@@ -7,30 +7,29 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="calc-grid">
+    <div class="calc-grid">  
         <div class="output">
-            <div data-previous-operand class="previous-operand"></div>
-            <div data-current-operand class="current-operand"></div>
+            <div class="result" id="display"></div>
         </div>
-        <button data-all-clear class="span-two">AC</button>
-        <button data-delete >DEL</button>
-        <button data-operation>÷</button>
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>*</button>
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>+</button>
-        <button data-number>7</button>
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>-</button>
-        <button data-number >.</button>
-        <button data-number>0</button>
-        <button data-equals class="span-two">=  </button>
+        <button class="span-two" onclick="clearDisplay()">AC</button>
+        <button class='button-delete' onclick="deleteOne()">DEL</button>
+        <button class='button-operator' onclick="chooseOperation('÷')">÷</button>
+        <button class='button-number' onclick="insertNumber('1')">1</button>
+        <button class='button-number' onclick="insertNumber('2')">2</button>
+        <button class='button-number' onclick="insertNumber('3')">3</button>
+        <button class='button-operator' onclick="chooseOperation('*')">*</button>
+        <button class='button-number' onclick="insertNumber('4')">4</button>
+        <button class='button-number' onclick="insertNumber('5')">5</button>
+        <button class='button-number' onclick="insertNumber('6')">6</button>
+        <button class='button-operator' onclick="chooseOperation('+')">+</button>
+        <button class='button-number' onclick="insertNumber('7')">7</button>
+        <button class='button-number' onclick="insertNumber('8')">8</button>
+        <button class='button-number' onclick="insertNumber('9')">9</button>
+        <button class='button-operator' onclick="chooseOperation('-')">-</button>
+        <button class='button-number' onclick="insertNumber('.')">.</button>
+        <button class='button-number' onclick="insertNumber('0')">0</button>
+        <button class="span-two" onclick="checkVariables('=')">=</button>
     </div>
-    <script src="./index.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
