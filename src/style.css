@@ -8,7 +8,7 @@ body {
     padding: 0;
     margin: 0;
     background: rgb(0, 0, 0);
-    background-image: url(devilbackground.jpg);
+    background-image: url(wp.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -25,8 +25,8 @@ body {
 .calc-grid > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid rgb(80, 1, 1);
-    background-color: rgba(22, 22, 22, 0.75);
+    border: 1px solid rgb(255, 87, 219);
+    background-color: rgba(34, 20, 20, 0.75);
     color: white;
 }
 
@@ -40,7 +40,7 @@ body {
 
 .output {
     grid-column: 1 / -1;
-    background-color: rgba(56, 7, 27, 0.924);  
+    background-color: rgba(63, 20, 37, 0.924);  
     display: flex;
     align-items : flex-end;
     justify-content: space-around;
@@ -48,17 +48,7 @@ body {
     padding: 30px ;
     word-wrap: break-word;
     word-break: break-all; 
-    border: 1px solid rgb(80, 1, 1);
+    border: 1px solid rgb(255, 87, 219);
     color: white;
     font-size: 2.5rem;
 }
-
-/* .output .previous-operand {
-    color: rgba(222, 254, 255, 0.616);
-    font-size:1.5rem;
-}
-
-.output .current-operand {
-    color: white;
-    font-size: 2.5rem;
-} */
